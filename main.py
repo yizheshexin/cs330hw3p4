@@ -1,7 +1,3 @@
-# 先写一个MST算法
-
-# n个点，（2，n）条边
-
 import random
 import numpy as np
 
