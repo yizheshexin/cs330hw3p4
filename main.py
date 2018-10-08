@@ -3,7 +3,7 @@ import numpy as np
 
 
 def create_g1(n):
-    graph = np.array([([0.00] * n) for i in range(n)])
+    graph = np.zeros((n,n),dtype='float16')
     for i in range(n):
         for j in range(n):
             graph[i][j] = random.random()
@@ -15,7 +15,7 @@ def create_g1(n):
 
 def create_g2(n):
     dict_cor = {}
-    graph = np.array([([0.00] * n) for i in range(n)])
+    graph = np.zeros((n,n),dtype='float16')
     for i in range(n):
         dict_cor[i] = (random.random(),random.random())
     for a in range(n):
